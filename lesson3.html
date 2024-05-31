@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon"><!--Relative reference with link tag--><!--Relative reference is from local server-->
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <header><!--semantic and useful for code navigation-->
+    <h1>Hello World!</h1>
+    <hr>
+    <nav aria-label="primary-navigation"><!--semantic and useful for code navigation-->
+    <ul>
+        <li><a href="#html">HTML</a></li><!--Internal reference-->
+        <li><a href="#Vacation">VACATION</a></li>
+    </ul>
+</nav>
+</header>
+
+    <hr>
+    <main><!--semantic and useful for code navigation-->
+    <article id="html"><!--semantic and useful for code navigation-->
+
+    <h2>I'm Ready to Learn HTML</h2>
+    <p>This is my first web page.</p>
+    <section><!--semantic and useful for code navigation-->
+        <h3>Dum</h3>
+    <img src="img/dum.png" alt="dum" title="fat" width="500" height="100"> <!--The alt text appears when image does not load and The title text appears when we hover over image--><!--Unsplash, pexels, grattisography are free-licensed image websites-->
+    <figure>
+        <figcaption>
+            Fat Samnvi: The Beginning
+        </figcaption>
+        <code><!--This makes the text look like code-->
+            In the beninging
+        </code>
+    </figure>
+</section>
+<section>
+
+    <h3>My Daily Schedule</h3>
+    <p>Let me tell you how:</p>
+    <ol>
+        <li>...I learn more about web dev.</li>
+        <li>...I plan out my schedule.</li>
+        <li>...I use resources from <abbr title="Mozilla Developer Network"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">MDN</a></abbr>.</li><!--Absolute Reference with anchor tag--><!--Absolute reference is from the web or other global resources-->
+    </ol>
+    <aside><!--semantic and useful for code navigation-->
+        <details>
+            <summary><!--drop down arrow appears to show the paragraph beneath </summary>-->
+                Guess the <mark>word</mark> I am thinking about
+            </summary>
+            <p>
+                <mark>SUIIIIIIII</mark><time datetime="08:00">8 am</time><time datetime="PT3H">3 hours</time>
+            </p>
+        </details>
+    </aside>
+</section>
+<section>
+    <table>
+        <caption>Daily schedule</caption><!--a title for a table-->
+        <thead><!--semantic and useful for code navigation-->
+        <tr>
+            <th>&nbsp;</th>
+            <th scope="col">
+                Time
+            </th>
+            <th scope="col">
+                Activity
+            </th>
+        </tr>
+    </thead>
+    <tbody><!--semantic and useful for code navigation-->
+        <tr>
+            <th scope="row">Morning</th>
+            <td>
+                <time datetime="06:00">6 am</time>-<time datetime="07:00">7 am</time><!-- time tag is useful for search engines and tells the browser that its a time-->
+            </td>
+            <td>
+                i sleep
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Less morning</th>
+            <td>
+                <time datetime="07:00">7 am</time>-<time datetime="08:00">8 am</time>
+            </td>
+            <td>
+                i wake
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Lesser morning</th>
+            <td>
+                <time datetime="08:00">8 am</time>-<time datetime="21:00">9 pm</time>
+            </td>
+            <td>
+                i do stuff
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Morning, Noon, Evening and Night</th>
+            <td rowspan="2"><!--if rowspan is higher than number of rows if will show the last row with info and won't show it's lower border-->
+                all other time
+            </td>
+            <td>
+                i sleep
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                Except those times                    
+            </th>
+            <td>
+                i dead
+            </td>
+        </tr>
+    </tbody>
+    <tfoot><!--semantic and useful for code navigation-->
+        <tr>
+            <td colspan="3"><!--if colspan is higher than number of columns it will show last column with info and if it's lower than max number of columns and has no td for other cells if will show the cells as empty as shown in next row-->
+                honse
+            </td>
+        </tr>
+        <tr>
+            <td>
+                test1 with one td in a row
+            </td>
+        </tr>
+    </tfoot>
+    </table>
+</section>
+    </article>
+
+    <hr>
+<article id ="Vacation">
+    <h2>I Am Also Planning a Vacation</h2>
+    <p>I've been working hard and <em>really need a getaway</em>.</p>
+    <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
+
+    <h3>Place I'd Like to Visit</h3>
+    <ul>
+        <li><p>I've heard good things about the Caribbean.</p></li>
+        <section>
+        <figure>
+            <img src="img/sam.jpg" alt="Sum" title="+" width="100" height="500" loading="lazy"><!--The loading tag makes the browser load the image when we are approaching the image, it's by default set to eager-->
+            <figcaption>First 3 letters of Samanvi</figcaption><!--figcaption must be used at the end or start of figure tag-->
+        </figure>
+    </section>
+        <li><p>I've heard good things about going here:</p>
+            <section>
+        <address><!--tells the browser that it's an address-->
+        Margaritaville Island Reserve Riviera Cancún<br>
+        Bahia Petempich Puerto Morelos, Mexico<br>
+        Colonia Morelos, México 77580
+        </address>
+        <figure>
+            <img src="img/anvi.jpg" alt="Anchovy" title="an V" width="200" height="200" loading="lazy">
+            <figcaption><strong>DUM SAMANVI</strong></figcaption>
+        </figure>
+        </li>
+    </section>
+
+    </ul>
+    
+    <!-- TODO: Add more places -->
+    <h3>Places I Want to Avoid</h3>
+    <dl>
+        <dt>North lope</dt><dd>Pretty <strong>cold</strong></dd>
+        <dt>South elpo</dt><dd>Cold bruh</dd>
+        <dt>Mounate pot</dt><dd>COOOOOOld</dd>
+    </dl>
+</article>
+</main>
+<footer><!--semantic and useful for code navigation-->
+    <hr>
+    &lt;&lt;&lt; &copy; <a href="dum.html">Hanuman Sarode</a> <!--Relative reference with anchor tag-->&gt;&gt;&gt;
+    <p>
+        <a href="#">Back to Top</a>
+    </p>
+</footer>
+</body>
+
+</html>
